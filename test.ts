@@ -1,0 +1,3 @@
+
+
+await import("./config.ts")
