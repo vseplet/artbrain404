@@ -7,7 +7,7 @@ const asyncFunctionFromString = (path) => {
 const init = async (im, path) => {
   console.log(im);
   // await import(im.resolve(path));
-  asyncFunctionFromString(path)
+  asyncFunctionFromString()(path)
 };
 
 export default {
