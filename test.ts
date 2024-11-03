@@ -1,11 +1,6 @@
-const init = async (im) => {
+const init = async (im, path) => {
   console.log(im);
-  await import(im.resolve('./cfg.ts'));
-  console.log(import.meta);
-  import.meta.url = "/Users/sevapp";
-  console.log(import.meta);
-  console.log(Deno.cwd());
-  await import("./config.ts")
+  await import(im.resolve(path));
 };
 
 export default {
